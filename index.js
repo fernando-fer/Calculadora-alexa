@@ -48,7 +48,7 @@ const handleSumaInput = {
 const handleRestaInput = {
   canHandle(handlerInput){
       return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-          && Alexa.getIntentName(handlerInput.requestEnvelope) === 'RestaInput'
+          && Alexa.getIntentName(handlerInput.requestEnvelope) === 'Restaintent'
   },
   handle(handlerInput){
     const cantidad = handlerInput.requestEnvelope.request.intent.slots.uno.value
@@ -71,7 +71,7 @@ const handleRestaInput = {
 const handleMultiplicacionInput = {
   canHandle(handlerInput){
       return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-          && Alexa.getIntentName(handlerInput.requestEnvelope) === 'MultiplicacionInput'
+          && Alexa.getIntentName(handlerInput.requestEnvelope) === 'Multiplicacionintent'
   },
   handle(handlerInput){
     const cantidad = handlerInput.requestEnvelope.request.intent.slots.uno.value
@@ -94,7 +94,7 @@ const handleMultiplicacionInput = {
 const handleDivisionInput = {
   canHandle(handlerInput){
       return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-          && Alexa.getIntentName(handlerInput.requestEnvelope) === 'DivisionInput'
+          && Alexa.getIntentName(handlerInput.requestEnvelope) === 'Divintent'
   },
   handle(handlerInput){
     const cantidad = handlerInput.requestEnvelope.request.intent.slots.uno.value
